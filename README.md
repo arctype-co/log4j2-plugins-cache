@@ -1,6 +1,6 @@
 # log4j2-plugins-cache
 
-This plugin fixes conflicting Log4j2PluginCache.dat files when building an uberjar using leiningen.
+This plugin fixes conflicting Log4j2Plugins.dat files when building an uberjar using leiningen.
 
 See [https://issues.apache.org/jira/browse/LOG4J2-673](LOG4J2-673) for reference.
 

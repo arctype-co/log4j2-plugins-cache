@@ -3,9 +3,7 @@
     [java.io File FileOutputStream]
     [java.util Collections]
     [org.apache.commons.io IOUtils]
-    [org.apache.logging.log4j.core.config.plugins.processor PluginCache])
-  (:require 
-    [robert.hooke :as hooke]))
+    [org.apache.logging.log4j.core.config.plugins.processor PluginCache]))
 
 (defn load-cache-file
   [input-stream]

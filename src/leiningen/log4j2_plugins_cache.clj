@@ -15,12 +15,11 @@
       (IOUtils/copyLarge input-stream ostream)
       (finally
         (IOUtils/closeQuietly ostream)))
-    (println "Loaded cache file:" (pr-str temp-file))
+    (println "Loaded Log4j2 plugin cache file")
     [temp-file]))
 
 (defn merge-cache-file
   [files merged]
-  (println "Merge cache file:" (pr-str files) (pr-str merged))
   (concat files merged))
 
 (defn write-cache-file
@@ -31,11 +30,10 @@
     (.writeCache plugin-cache ostream))
   (doseq [file files]
     (.delete file))
-  (println "Wrote merged cache file"))
+  (println "Wrote merged Log4j2 plugin cache file"))
 
 (defn middleware
   [project]
-  (println "adding log4j2-plugins-cache middleware")
   (update project :uberjar-merge-with
           assoc #"^META-INF\/org\/apache\/logging\/log4j\/core\/config\/plugins\/Log4j2Plugins.dat$" 
           ['leiningen.log4j2-plugins-cache/load-cache-file 'leiningen.log4j2-plugins-cache/merge-cache-file 'leiningen.log4j2-plugins-cache/write-cache-file]))

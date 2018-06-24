@@ -1,4 +1,4 @@
-(defproject arctype/log4j2-plugins-cache "0.1.0-SNAPSHOT"
+(defproject arctype/log4j2-plugins-cache "0.1.0"
   :description "FIXME: write description"
   :url "http://example.com/FIXME"
   :license {:name "Eclipse Public License"

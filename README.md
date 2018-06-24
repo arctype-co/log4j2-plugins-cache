@@ -2,7 +2,7 @@
 
 This plugin fixes conflicting Log4j2Plugins.dat files when building an uberjar using leiningen.
 
-See [https://issues.apache.org/jira/browse/LOG4J2-673](LOG4J2-673) for reference.
+See [LOG4J2-673](https://issues.apache.org/jira/browse/LOG4J2-673) for reference.
 
 You might see error messages such as below if you depend on any Log4j2 plugins in your project.
 

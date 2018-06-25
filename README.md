@@ -15,6 +15,8 @@ ERROR StatusLogger Unrecognized format specifier [level]
 ERROR StatusLogger Reconfiguration failed: No configuration found for '2b43529a' at 'null' in 'null'
 ```
 
+The code is based off of the same technique used for Maven in https://github.com/edwgiz/maven-shaded-log4j-transformer
+
 ## Usage
 
 Add the following to your project.clj to laod the plugin.

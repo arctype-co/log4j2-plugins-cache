@@ -23,7 +23,7 @@ Add the following to your project.clj to laod the plugin.
 
 ```clj
   :plugins
-  [[arctype/log4j2-plugins-cache "0.1.0-SNAPSHOT"]]
+  [[arctype/log4j2-plugins-cache "1.0.0"]]
 
   :middleware [leiningen.log4j2-plugins-cache/middleware]
 ```
